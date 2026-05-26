@@ -4,12 +4,12 @@ variable "aws_region" {
 }
 
 variable "key_name" {
-  type = string
+  type    = string
   default = "my-key-pair"
 }
 
 variable "instance_type" {
-  type = string
+  type    = string
   default = "t2.micro"
 }
 

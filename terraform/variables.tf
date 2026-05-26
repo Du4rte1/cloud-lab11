@@ -5,10 +5,12 @@ variable "aws_region" {
 
 variable "key_name" {
   type = string
+  default = "my-key-pair"
 }
 
 variable "instance_type" {
   type = string
+  default = "t2.micro"
 }
 
 variable "db_password" {

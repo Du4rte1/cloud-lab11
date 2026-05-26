@@ -1,7 +1,6 @@
 name: Terraform
 
 on:
-  workflow_dispatch:
   pull_request:
     paths: [ 'terraform/**' ]
   push:

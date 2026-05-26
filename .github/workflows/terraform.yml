@@ -35,6 +35,8 @@ jobs:
       - run: terraform validate
       - run: terraform plan -no-color -out=tfplan
         id: plan
+        env:
+          TF_VAR_db_password: ${{ secrets.TF_VAR_DB_PASSWORD }}
 
       - name: Comment plan on PR
         if: github.event_name == 'pull_request'

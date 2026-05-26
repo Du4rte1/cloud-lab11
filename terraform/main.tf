@@ -1,4 +1,4 @@
-# terraform trigger test
+# terraform trigger test2
 
 provider "aws" {
   region = var.aws_region

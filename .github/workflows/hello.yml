@@ -19,3 +19,10 @@ jobs:
 
       - name: List files
         run: ls -la
+
+      - name: Write summary
+        run: |
+          echo "### Deploy Report"              >> $GITHUB_STEP_SUMMARY
+          echo "- Service: product-service"     >> $GITHUB_STEP_SUMMARY
+          echo "- SHA: \`${{ github.sha }}\`"   >> $GITHUB_STEP_SUMMARY
+          echo "- Time: $(date -u)"             >> $GITHUB_STEP_SUMMARY

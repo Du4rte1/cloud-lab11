@@ -1,4 +1,4 @@
-#terraform trigger 
+#terraform trigger test
 #test workflow
 
 provider "aws" {
